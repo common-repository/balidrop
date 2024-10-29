@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.selectBox {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    margin-bottom: 10px;
+}
+.importBtn {
+    height: 44px;
+}
+.importBtn, .tip {
+    margin-left: 20px;
+}
+
+.selectBox .left {
+    display: flex;
+    align-items: center;
+}
+
+.selectBox .left input {
+    margin-right: 10px;
+}
+
+.productImg {
+    width: 60px;
+    height: 60px;
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentBox .contentBox-t {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.contentBox .contentBox-b {
+    font-size: 14px;
+}
+
+.red {
+    color: rgba(254, 79, 49, 1);
+}
+
+.green {
+    background-color: #0f83ea;
+    color: white;
+}
+
+.btn {
+    color: white;
+    background-color: #0f83ea;
+    border: 0;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #0f83ea;
+    border: 0;
+}
+
+.btn:active:focus,
+.btn:focus {
+    color: white;
+    background-color: #0f83ea;
+    border: 0;
+    outline: 0;
+}
+
+.danger {
+    height: 42px;
+    color: #fff;
+    background-color: #EA0627;
+    border-color: #EA0627;
+}
+
+.danger:hover {
+    color: white;
+    background-color: #EA0627;
+    border: 0;
+}
+
+.danger:active:focus,
+.danger:focus {
+    color: white;
+    background-color: #EA0627;
+    border: 0;
+    outline: 0;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+}
+
+.searchBox .searchBox-title {
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
+    /*padding-left: 15px;*/
+}
+
+.searchBox .inputBox {
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #B3B3B3;
+    margin: 0 40px;
+    min-width: 900px;
+    display: flex;
+}
+
+.inputBox input {
+    border: 0;
+    height: 100%;
+    width: 700px;
+    outline: 0;
+}
+input[type=text]:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.inputBox .select1 {
+    flex: 1;
+    border: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #F2F3F8;
+    outline: 0;
+}
+
+.categotyBox {
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
+.select2 {
+    /*border: 0;*/
+    width: 200px;
+    height: 44px;
+    background-color: #F2F3F8;
+    outline: 0;
+    padding: 0 10px;
+}
+
+.pagetion {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table td,
+.table th {
+    vertical-align: baseline;
+}
+
+.table tr td:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0;
+}
+
+
+/*input[type=checkbox] {*/
+/*    width: 12px;*/
+/*    border-radius: 0;*/
+/*    height: 12px;*/
+/*}*/
+/*input[type=checkbox]:focus {*/
+/*    outline: 0;*/
+/*}*/
+
+
+.select,
+#locale {
+    width: 100%;
+}
+.like {
+    margin-right: 10px;
+}
+
+.balidrop-alert{
+    position: fixed;
+    z-index: 99999;
+    right: -20px;
+    top: 60px;
+    padding: 10px 60px;
+    background: #ccc;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+.balidrop-alert-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+.balidrop-alert p{
+    margin: 0;
+    font-size: 16px;
+}
+.balidrop-alert.balidrop-alert-success {
+    background: #1db25f;
+}
+.balidrop-alert.balidrop-alert-info {
+    background: #0f83ea;
+}
+.balidrop-alert.balidrop-alert-error {
+    background: #ea0627;
+}
+.balidrop-alert.balidrop-alert-waring {
+    background: #f1b81c;
+}
+.balidrop-alert.balidrop-show {
+    right: 30px;
+    visibility:visible;
+    opacity: 1;
+}
+
+.balidrop-loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+.balidrop-loading i{
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+.balidrop-loading p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+.balidrop-loading img{
+    max-width: 40px;
+}
+.balidrop-loading.balidrop-show{
+    visibility:visible;
+    opacity: 1;
+}
